@@ -1,17 +1,13 @@
-# minimal-reproduction-template
-
-First, read the [Renovate minimal reproduction instructions](https://github.com/renovatebot/renovate/blob/main/docs/development/minimal-reproductions.md).
-
-Then replace the current `h1` with the Renovate Issue/Discussion number.
+# Reproduction for #32117
 
 ## Current behavior
 
-Explain the current behavior here.
+The loaded config contains only the `postUpgradeTasks` defined in renovate.json
 
 ## Expected behavior
 
-Explain the expected behavior here.
+I suppose this is expected, but it would be nice if `postUpgradeTasks` could be an array, so you can extend from a preset and still define your own.
 
 ## Link to the Renovate issue or Discussion
 
-Put your link to the Renovate issue or Discussion here.
+https://github.com/renovatebot/renovate/discussions/32117
