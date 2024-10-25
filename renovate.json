@@ -1,1 +1,21 @@
-{}
+{
+  "extends": [
+    "tschut/renovate-postupgradetasks-reproduction:postupgradetask-preset"
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "maven"
+      ],
+      "postUpgradeTasks": {
+        "commands": [
+          "echo 'hello from renovate.json'"
+        ]
+      }
+    },
+    {
+      "matchPackageNames": ["org.apache.commons:commons-io"],
+      "minimumReleaseAge": "365 days"
+    }
+  ]
+}

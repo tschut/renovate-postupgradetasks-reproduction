@@ -1,0 +1,14 @@
+{
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "maven"
+      ],
+      "postUpgradeTasks": {
+        "commands": [
+          "echo 'hello from preset'"
+        ]
+      }
+    }
+  ]
+}
